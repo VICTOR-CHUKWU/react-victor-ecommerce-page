@@ -1,0 +1,30 @@
+.cart-main {
+  margin: 3rem;
+  text-align: center;
+}
+.cart-main .rigth-items {
+  padding-top: 1rem;
+  padding-left: 2rem;
+}
+.cart-main .rigth-items h5 {
+  margin-left: 2rem;
+  font-weight: bold;
+  font-size: 1rem;
+  margin-bottom: 0rem;
+}
+.cart-main .rigth-items p {
+  margin-left: 2rem;
+  margin-top: 0rem;
+}
+.cart-main span {
+  background: blue;
+  color: white;
+  padding: 0.1rem 0.4rem;
+  border-radius: 2px;
+}
+.cart-main .hr {
+  width: 60%;
+  margin: 0.2rem auto;
+  height: 3px;
+  background: #e2dddd;
+}/*# sourceMappingURL=Cart.css.map */

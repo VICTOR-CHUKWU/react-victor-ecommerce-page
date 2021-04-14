@@ -1,0 +1,71 @@
+.product-main {
+  width: 70%;
+  margin: 3rem auto;
+  display: flex;
+  align-items: center;
+  box-sizing: border-box;
+}
+.product-main img {
+  width: 16rem;
+  height: 17rem;
+  margin-right: 2rem;
+  border-radius: 10px;
+}
+.product-main h1 {
+  color: #4d4a4a;
+  font-weight: bold;
+  font-size: 15px;
+  text-transform: uppercase;
+  margin-top: -0.5rem;
+}
+.product-main p {
+  color: #4d4a4a;
+}
+.product-main h4 {
+  color: #6d6969;
+  font-weight: bold;
+  font-size: 20px;
+}
+.product-main .button-prod {
+  padding: 0.1rem 0.6rem;
+  margin-bottom: 1.4rem;
+  width: 80px;
+  height: 30px;
+  outline: 0;
+  border: 2px solid #4c4c8b;
+  border-radius: 5px;
+  background: none;
+  color: blue;
+  font-size: 15px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.product-main .button-bag {
+  padding: 0.5rem 1.7rem;
+  margin-right: 1rem;
+  margin-bottom: 1rem;
+  outline: 0;
+  border: 2px solid #3a3add;
+  border-radius: 5px;
+  background: none;
+  color: blue;
+  font-size: 20px;
+  cursor: pointer;
+}
+.product-main .button-buy {
+  padding: 0.5rem 1.7rem;
+  margin-left: 1rem;
+  margin-bottom: 1rem;
+  outline: 0;
+  border: none;
+  border-radius: 5px;
+  border: 2px solid yellow;
+  background: yellow;
+  color: blue;
+  font-size: 20px;
+  cursor: pointer;
+}
+.product-main .click-icon {
+  cursor: pointer;
+}/*# sourceMappingURL=product.css.map */

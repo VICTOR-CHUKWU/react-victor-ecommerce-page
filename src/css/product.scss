@@ -1,0 +1,71 @@
+.product-main{
+    width: 70%;
+    margin:3rem auto ;
+    display: flex;
+    align-items: center;
+    box-sizing: border-box;
+    img{
+        width: 16rem;
+        height: 17rem;
+        margin-right: 2rem;
+        border-radius: 10px;
+    }
+    h1{
+        color: rgb(77, 74, 74);
+        font-weight: bold;
+        font-size: 15px;
+        text-transform: uppercase;
+        margin-top: -.5rem;
+    }
+    p{
+        color: rgb(77, 74, 74);
+    }
+    h4{
+        color: rgb(109, 105, 105);
+        font-weight: bold;
+        font-size: 20px;
+    }
+    .button-prod{
+        padding: 0.1rem 0.6rem;
+        margin-bottom: 1.4rem;
+        width: 80px;
+        height: 30px;
+    outline: 0;
+    border: 2px solid rgb(76, 76, 139);
+    border-radius: 5px;
+    background: none;
+    color: blue;
+    font-size: 15px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    }
+    .button-bag{
+        padding: 0.5rem 1.7rem;
+        margin-right: 1rem;
+        margin-bottom: 1rem;
+    outline: 0;
+    border: 2px solid rgb(58, 58, 221);
+    border-radius: 5px;
+    background: none;
+    color: blue;
+    font-size: 20px;
+    cursor: pointer;
+    }
+    .button-buy{
+        padding: 0.5rem 1.7rem;
+        margin-left: 1rem;
+        margin-bottom: 1rem;
+        outline: 0;
+        border: none;
+        border-radius: 5px;
+        border: 2px solid yellow;
+        background: yellow;
+        color: blue;
+        font-size: 20px;
+        cursor: pointer;
+    }
+    .click-icon{
+        cursor: pointer;
+    }
+}

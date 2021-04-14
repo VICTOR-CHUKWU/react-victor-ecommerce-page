@@ -1,0 +1,79 @@
+.main {
+  margin: 0rem 2rem;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+.main .left-item {
+  border-right: 1px solid gray;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  padding-top: 2rem;
+}
+.main .left-item button {
+  margin: 1.5rem 0rem;
+  outline: none;
+  border: none;
+  font-size: 18px;
+  background: none;
+  color: #443c3c;
+  display: flex;
+  align-items: center;
+  transition: all 1s ease-in;
+}
+.main .left-item button:hover {
+  border-right: 3px solid #1616a0;
+  background: rgba(212, 212, 238, 0.5);
+}
+.main .left-item button:focus {
+  border-right: 3px solid #1616a0;
+  background: rgba(212, 212, 238, 0.5);
+}
+.main .center-item {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0rem 0rem;
+  padding: 0rem 0.8rem;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+  transition: all 1s linear;
+}
+.main .center-item img {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  box-shadow: 8px 8px 5px #d1cccc;
+  outline: none;
+  border: none;
+  transition: all 1s ease-in-out;
+}
+.main .center-item:hover {
+  background: rgba(212, 212, 238, 0.5);
+}
+.main .center-item:hover img {
+  transform: scale(1.2);
+}
+.main .rigth-item {
+  border-left: 1px solid gray;
+  padding-top: 1rem;
+  padding-left: 2rem;
+}
+.main .rigth-item h5 {
+  margin-left: 2rem;
+  font-weight: bold;
+  font-size: 1rem;
+  margin-bottom: 0rem;
+}
+.main .rigth-item p {
+  margin-left: 2rem;
+  margin-top: 0rem;
+}
+.main .big-icon {
+  font-size: 8rem;
+  background: #c5c1c1;
+  border-radius: 50%;
+  border: none;
+  color: #929191;
+}/*# sourceMappingURL=Home.css.map */

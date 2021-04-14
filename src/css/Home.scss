@@ -1,0 +1,89 @@
+.main{
+    margin: 0rem 2rem;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    .left-item{
+        border-right: 1px solid gray;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+        padding-top: 2rem;
+        button{
+            margin: 1.5rem 0rem;
+            outline: none;
+            border: none;
+            font-size: 18px;
+            background: none;
+            color: rgb(68, 60, 60);
+            display: flex;
+            align-items: center;
+            transition: all 1s ease-in;
+            &:hover{
+                border-right: 3px solid rgb(22, 22, 160);
+                background: rgba(212, 212, 238, 0.5);
+            }
+            &:focus{
+                border-right: 3px solid rgb(22, 22, 160);
+                background: rgba(212, 212, 238, 0.5);
+            }
+        }
+    }
+    .center-item{
+       
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        margin: 0rem 0rem;
+        padding: 0rem 0.8rem;
+        padding-top: 2rem;
+        padding-bottom: 2rem;
+        transition: all 1s linear;
+        img{
+            width: 80px;
+            height: 80px;
+            border-radius: 50%;
+            box-shadow: 8px 8px 5px rgb(209, 204, 204);
+            outline: none;
+            border: none;
+            transition: all 1s ease-in-out;
+
+        }
+        &:hover{
+            background: rgba(212, 212, 238, 0.5);
+            img{
+                transform: scale(1.2);
+            }
+        }
+        
+    }
+    .rigth-item{
+        border-left: 1px solid gray;
+       padding-top: 1rem ;
+       padding-left: 2rem;
+
+       h5{
+           margin-left: 2rem;
+           font-weight: bold;
+           font-size: 1rem;
+           margin-bottom: 0rem;
+       }
+       p{
+           margin-left: 2rem;
+           margin-top: 0rem;
+       }
+       span{
+        background: blue;
+        color: white;
+        padding: .1rem .4rem;
+        border-radius: 2px;
+    }
+    }
+    .big-icon{
+        font-size: 8rem;
+        background: rgb(197, 193, 193);
+        border-radius: 50%;
+        border: none;
+        color: rgb(146, 145, 145);
+    }
+}

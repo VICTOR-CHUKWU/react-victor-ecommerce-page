@@ -1,0 +1,262 @@
+html{
+    font-size: 100%;
+    box-sizing: border-box;
+}
+*{
+    box-sizing: inherit;
+}
+body{
+    background-color: white;
+    margin: 0;
+    padding: 0;
+    font-size: 15px;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    color: rgb(78, 74, 74);
+}
+a{
+    text-decoration: none;
+    margin: 0.2rem;
+}
+main{
+    position: relative;
+}
+.top-header{
+    background-color: rgb(67, 67, 117);
+    padding: 0.3rem;
+    color: white;
+    text-align: center;
+    h4{
+        font-size: 12px;
+    }
+}
+.item{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+.flex-down{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0rem;
+    h4{
+        margin-bottom: 0.1rem;
+    }
+    p{margin-top: 0;}
+}
+.nav{
+    display: flex;
+    justify-content: space-around;
+    padding: 0.3rem 1rem;
+    align-items: center;
+    border-bottom: 1px solid gray;
+}
+.button-add{
+    padding: 0.2rem 0.4rem;
+    outline: 0;
+    border: 1px solid rgb(54, 54, 82);
+    background: none;
+    color: blue;
+    font-size: 15px;
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: all 1s ease-in;
+    &:hover{
+        transform: scale(1.1);
+    }
+}
+.button-nav{
+    outline: none;
+    border: none;
+    font-size: 18px;
+    color: black;
+    margin-right: .9rem;
+    background: none;
+    cursor: pointer;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+
+}
+.nav-logo{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+.add-icon{
+    font-size: 15px;
+    font-weight: bold;
+    color: blue;
+    margin-right: .1rem;
+}
+.header-icon{
+    font-size: 3rem;
+    padding: 0.4rem;
+    color: rgb(61, 57, 57);
+    background: rgb(216, 208, 208);
+    border-radius: 50%;
+    margin-right: 0.4rem;
+}
+.nav-icon{
+    font-size: 1.4rem;
+    color: rgb(61, 57, 57); 
+    margin-right: 0.3rem;
+}
+
+//foooter
+.upper-footer{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    background:  rgb(67, 67, 117);
+    h4{
+        color: white;
+        margin-right: 2rem;
+        margin-left: 2rem;
+        margin-bottom: 1rem;
+    }
+}
+.lower-footer{
+    p{
+        text-align: center;
+    }
+}
+.footer-icon{
+    color: yellowgreen;
+    font-size: 70px;
+    margin-right: 2rem;
+    margin-left: 2rem;
+    margin-top: 1.5rem;
+
+}
+
+.search{
+    width: 40%;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    top: -2%;
+    display: flex;
+}
+
+.input-text{
+    width: 100%;
+    height: 40px;
+    border: none;
+    outline: none;
+    background: rgb(247, 244, 244);
+    border-bottom-left-radius: 5px;
+    border-top-left-radius: 5px;
+    color: black;
+    padding: .3rem .7rem;
+    font-size: 20px;
+}
+.button-submit{
+    background: orange;
+    border-bottom-right-radius: 5px;
+    border-top-right-radius: 5px;
+    border: none;
+    outline: none;
+}
+
+//for modals
+.main-modal{
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(122, 119, 119, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.modal-inner{
+    background: whitesmoke;
+    margin-top: 2rem;
+    border-radius: 3px;
+    padding: 1rem;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   justify-content: center;
+    img{
+        width: 16rem;
+        height: 17rem;
+        border-radius: 10px;
+    }
+    h1{
+        color: rgb(77, 74, 74);
+        font-weight: bold;
+        font-size: 15px;
+        text-transform: uppercase;
+        text-align: center;
+    }
+    p{
+        color: rgb(77, 74, 74);
+    }
+    h4{
+        color: rgb(109, 105, 105);
+        font-weight: bold;
+        font-size: 20px;
+    }
+    
+    
+    .button-buy{
+        padding: 0.5rem 1.7rem;
+        margin-bottom: 1rem;
+        outline: 0;
+        border: none;
+        border-radius: 5px;
+        border: 2px solid yellow;
+        background: yellow;
+        color: blue;
+        font-size: 20px;
+        cursor: pointer;
+    }
+}
+.button-bag{
+    padding: 0.5rem 1.7rem;
+    margin-bottom: 1rem;
+outline: 0;
+border: 2px solid rgb(58, 58, 221);
+border-radius: 5px;
+background: none;
+color: blue;
+font-size: 20px;
+cursor: pointer;
+}
+.big-icon{
+    font-size: 8rem;
+    background: rgb(197, 193, 193);
+    border-radius: 50%;
+    border: none;
+    color: rgb(146, 145, 145);
+}
+
+//for category item
+.category-page{
+    width: 80%;
+    margin: 3rem auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    img{
+        width: 15rem;
+        height: 15rem;
+    }
+    h3{
+        color: black;
+    }
+    p{
+        margin-left: 1rem;
+        max-width: 30%;
+    }
+}
+
