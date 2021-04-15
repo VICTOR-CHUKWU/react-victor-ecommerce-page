@@ -8,7 +8,7 @@ export default class Congratulation extends Component {
         return (
             <ProductConsumer>
                 {value => {
-                    // const {cart} = value;
+                    const {clearAll} = value;
                     return (
                         <section className='congrats'>
                         <img src="images/congrat.jpg" alt=""/>
@@ -21,7 +21,7 @@ export default class Congratulation extends Component {
                            <button className='button-bag'>Track order</button>
                            </Link>
                            <Link to='/'>
-                           <button className='button-bag' >Continue Shopping</button>
+                           <button className='button-bag' onClick={() => clearAll()} >Continue Shopping</button>
                            </Link>
                        </div>
                     </section>

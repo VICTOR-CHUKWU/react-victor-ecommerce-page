@@ -3,7 +3,7 @@ import { ProductConsumer } from '../../Contex';
 import Cartlist from '../Cart/CartList';
 import CartTotal from '../Cart/CartTotal';
 import '../../css/Cart.scss';
-import {Link} from 'react-router-dom'
+import {Link} from 'react-router-dom';
 
 export default class Checkout extends Component {
     render() {

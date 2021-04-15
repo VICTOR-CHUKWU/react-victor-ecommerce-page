@@ -3,7 +3,7 @@ import '../../css/account.scss';
 
 export default function Account() {
     return (
-        <section className='account'>
+        <section className='account-account'>
             <div className='account-info'>
                 <div>
                 <button className='button-nav btn'>My orders</button>
