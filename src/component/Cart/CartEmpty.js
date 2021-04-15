@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { AiOutlineFrown, AiOutlinePlus } from 'react-icons/ai';
+import { AiOutlineFrown } from 'react-icons/ai';
 
 export default class CartEmpty extends Component {
     render() {

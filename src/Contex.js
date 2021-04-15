@@ -13,6 +13,7 @@ class ProductDisplay extends Component {
         cartSubTotal : 0,
         cartTax: 0,
         cartTotal : 0,
+        search : ''
     };
     componentDidMount() {
         this.setProducts()
@@ -55,6 +56,17 @@ class ProductDisplay extends Component {
           }, this.addTotal);
 
     };
+    searchItem =(value) =>{
+      let newSearch = [...this.state.products]
+     const searchResult = newSearch.filter((item) => {
+       return item.name.search(value)
+     })
+    this.setState(() => {
+      return {
+        search : searchResult,
+      }
+    })
+    }
     openModal = id => {
         const product = this.getItem(id);
         this.setState(() => {
@@ -155,6 +167,7 @@ class ProductDisplay extends Component {
             increment: this.increment,
             removeItem : this.removeItem,
             clearAll : this.clearAll,
+            searchItem: this.searchItem,
             }}>
                 {this.props.children}
             </ProductContent.Provider>

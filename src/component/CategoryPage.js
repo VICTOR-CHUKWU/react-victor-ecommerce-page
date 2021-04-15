@@ -1,6 +1,4 @@
 import React, { Component } from 'react';
-import {Link} from 'react-router-dom';
-import Data from '../Data';
 import {ProductConsumer} from '../Contex'
 
 export default class CategoryPage extends Component {

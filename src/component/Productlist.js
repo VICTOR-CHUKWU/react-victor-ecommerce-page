@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import {Link} from 'react-router-dom';
 import '../css/Home.scss';
-import { AiOutlineFrown, AiOutlinePlus } from 'react-icons/ai';
+import { AiOutlinePlus } from 'react-icons/ai';
 import { ProductConsumer } from "../Contex";
 
 export default class Productlist extends Component {

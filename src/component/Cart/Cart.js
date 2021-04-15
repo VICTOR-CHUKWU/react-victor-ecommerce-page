@@ -20,7 +20,7 @@ export default class Cart extends Component {
                                 <div className="hr"></div>
                                 <div className='display-cart'>
                                 <CartList value={value}/>
-                                <CartTotal value= {value}/>
+                                <CartTotal value= {value} history={this.props.history}/>
                                 </div>
                             </div>
                            )

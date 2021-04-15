@@ -1,3 +1,4 @@
+@import "mixin";
 .cart-main{
     margin: 3rem;
     text-align: center;
@@ -35,16 +36,42 @@
         display: flex;
         align-items: center;
         justify-content: space-between;
+        @include break-point-down(small){
+        flex-direction: column;
+        width: 90%;
+   }
+    }
+    .cart-items{
+        width: 70%;
+        margin: 1.5rem auto;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        @include break-point-down(small){
+        width: 90%;
+        justify-content: space-around;
+        h2{
+            font-size: 15px;
+        }
+   }
     }
     .image-cart{
         width: 8rem;
         height: 8rem;
         border-radius: 10px;
+        @include break-point-down(small){
+        width: 10rem;
+        height: 10rem;
+   }
     }
     .item-flex{
         display: flex;
         flex-direction: column;
         align-items: center;
+//         @include break-point-down(small){
+//         flex-direction: row;
+//         justify-content: space-between;
+//    }
     
     }
     .button-prod{
@@ -68,4 +95,66 @@
     }
     }
     
+}
+.checkout-grid{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+
+    .account-check{
+        border-right: 1px solid gray;
+        
+    }
+    @include break-point-down(medium){
+     grid-template-columns: repeat(1,1fr);
+     .account-check{
+         border-right: none;
+         border-bottom: 1px solid gray;
+     }
+}
+}
+.account{
+    margin-left: 4rem;
+    margin-bottom: 2.5rem;
+    @include break-point-down(small){
+     margin-left: 1rem;
+}
+}
+.searching{
+    width: 60%;
+    display: flex;
+    @include break-point-down(small){
+    width: 90%;
+}
+}
+
+.input-text{
+    width: 100%;
+    height: 40px;
+    border: none;
+    outline: none;
+    background: rgb(247, 244, 244);
+    border-bottom-left-radius: 5px;
+    border-top-left-radius: 5px;
+    color: black;
+    padding: .3rem .7rem;
+    font-size: 20px;
+}
+.button-submit{
+    background: orange;
+    border-bottom-right-radius: 5px;
+    border-top-right-radius: 5px;
+    border: none;
+    outline: none;
+    font-size: 20px;
+}
+.congrats{
+    margin-top: 4rem;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    img{
+        width: 6rem;
+        height: 6rem;
+    }
 }

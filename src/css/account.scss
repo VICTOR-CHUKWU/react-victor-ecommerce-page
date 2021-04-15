@@ -1,0 +1,20 @@
+.account{
+    margin: 3rem auto;
+    width: 70%;
+    border: 1px solid gray;
+    border-radius: 3px;
+    padding: 0rem 2rem;
+    display: grid;
+    grid-template-areas: 'a b b b';
+    .account-info{
+        grid-area: a;
+        border-right: 1px solid gray;
+        .btn{
+            margin-top: 2rem;
+            margin-bottom: 1rem;
+        }
+    }
+    .account-details{
+        grid-area: b;
+    }
+}

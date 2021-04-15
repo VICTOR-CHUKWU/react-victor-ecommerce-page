@@ -6,7 +6,10 @@ import Default from './component/Default';
 import Product from './component/Product';
 import Cart from './component/Cart/Cart';
 import Modal from './component/Modal';
-import CategoryPage from './component/CategoryPage'
+import CategoryPage from './component/CategoryPage';
+import Checkout from './component/checkout/Checkout';
+import Congratulation from './component/checkout/Congratulation';
+import Account from './component/Account/Account';
 
 export class App extends Component {
   render() {
@@ -18,6 +21,9 @@ export class App extends Component {
           <Route exact path='/product' component={Product}/>
           <Route exact path='/cart' component={Cart}/>
           <Route exact path='/categories' component={CategoryPage}/>
+          <Route exact path='/checkout' component={Checkout}/>
+          <Route exact path='/succes' component = {Congratulation}/>
+          <Route exact path='/account' component = {Account}/>
           <Route  component={Default}/>
         </Switch>
         <Modal/>
